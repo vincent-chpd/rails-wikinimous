@@ -1,0 +1,17 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <h2>New article</h2>
+      <%= form_with model: @article do |f| %>
+        <div class="d-flex flex-column" >
+          <%= f.label :title %>
+          <%= f.text_field :title, class: "form-control" %>
+          <%= f.label :content %>
+          <%= f.text_field :content, class: "form-control" %>
+        </div>
+        <%= f.submit class:'btn btn-primary mt-3' %>
+      <% end %>
+    </div>
+  </div>
+</div>

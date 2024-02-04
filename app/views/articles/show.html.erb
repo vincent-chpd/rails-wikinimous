@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 ">
+
+      <h2 class="border-bottom pb-3" >
+        <%= @article.title.capitalize %>
+        <span>
+          <%= link_to '<i class="fa fa-pen-to-square "></i>'.html_safe, edit_article_path %>
+          <%= link_to '<i class="fa fa-trash"></i>'.html_safe %>
+        </span>
+      </h2>
+
+      <p><%= @article.content %></p>
+
+      <%= link_to "Back to articles", articles_path, class:"btn btn-primary" %>
+
+    </div>
+  </div>
+</div>
